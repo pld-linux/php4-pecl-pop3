@@ -4,7 +4,7 @@
 %define		extensionsdir	%{_libdir}/php4
 
 Summary:	POP3 Client Library
-Summary(pl.UTF-8):   Biblioteka klienta POP3
+Summary(pl.UTF-8):	Biblioteka klienta POP3
 Name:		php4-pecl-%{_modname}
 Version:	1.0.2
 Release:	4
