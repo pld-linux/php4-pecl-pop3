@@ -2,7 +2,6 @@
 %define		_status		stable
 %define		_sysconfdir	/etc/php4
 %define		extensionsdir	%{_libdir}/php4
-
 Summary:	POP3 Client Library
 Summary(pl.UTF-8):	Biblioteka klienta POP3
 Name:		php4-pecl-%{_modname}
@@ -15,9 +14,9 @@ Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 URL:		http://pecl.php.net/package/POP3/
 BuildRequires:	libspopc-devel
 BuildRequires:	php4-devel >= 3:4.3.0
-BuildRequires:	rpmbuild(macros) >= 1.322
+BuildRequires:	rpmbuild(macros) >= 1.344
 %{?requires_php_extension}
-Requires:	%{_sysconfdir}/conf.d
+Requires:	php4-common >= 3:4.4.0-3
 Obsoletes:	php-pear-%{_modname}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
